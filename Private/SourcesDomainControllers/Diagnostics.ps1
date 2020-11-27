@@ -5,7 +5,7 @@ $Diagnostics = @{
     Source = @{
         Name           = 'Diagnostics (DCIAG)'
         Data           = {
-            Test-ADDomainController -ComputerName $DomainController -WarningAction SilentlyContinue
+            Test-ADDomainController -Forest $ForestName -ComputerName $DomainController -WarningAction SilentlyContinue
         }
         Details        = [ordered] @{
             Area        = 'Health'
